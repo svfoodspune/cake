@@ -781,6 +781,84 @@ body {
   background: var(--background-white);
 }
 
+/* Product Category Navigation */
+.product-categories-nav {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 60px 0 40px;
+}
+
+.category-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 32px;
+  background: var(--background-light);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.category-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+  border-color: var(--primary-color);
+}
+
+.category-btn.active {
+  background: linear-gradient(135deg, var(--primary-color), var(--text-secondary));
+  color: white;
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-large);
+}
+
+.category-icon {
+  font-size: 20px;
+}
+
+.category-text {
+  font-weight: 600;
+}
+
+/* Product Category Containers */
+.product-category {
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.product-category.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.category-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.category-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.category-subtitle {
+  font-size: 16px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1414,6 +1492,19 @@ body {
     width: 100px;
     height: 100px;
   }
+
+  /* Product categories responsive */
+  .product-categories-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .category-btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1469,6 +1560,16 @@ body {
 
   .partners-header h3 {
     font-size: 24px;
+  }
+
+  /* Product categories small mobile */
+  .category-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .category-icon {
+    font-size: 16px;
   }
 }
 
