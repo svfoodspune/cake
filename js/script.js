@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initializeScrollAnimations()
   initializeFormHandling()
   initializeSmoothScrolling()
+  initializeProductCategories()
 })
 
 function initializeLoadingAnimation() {
@@ -87,6 +88,47 @@ function initializeNavigation() {
     link.addEventListener("click", () => {
       mobileMenu.classList.remove("active")
       mobileMenuBtn.classList.remove("active")
+    })
+  })
+}
+
+// Product category switching functionality
+function initializeProductCategories() {
+  const categoryButtons = document.querySelectorAll(".category-btn")
+  const productCategories = document.querySelectorAll(".product-category")
+
+  if (categoryButtons.length === 0 || productCategories.length === 0) {
+    console.log("[v0] Product category elements not found")
+    return
+  }
+
+  categoryButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const targetCategory = button.dataset.category
+      console.log(`[v0] Switching to category: ${targetCategory}`)
+
+      // Remove active class from all buttons
+      categoryButtons.forEach((btn) => btn.classList.remove("active"))
+      
+      // Add active class to clicked button
+      button.classList.add("active")
+
+      // Hide all product categories
+      productCategories.forEach((category) => {
+        category.classList.remove("active")
+        category.style.opacity = "0"
+        category.style.transform = "translateY(20px)"
+      })
+
+      // Show target category with animation
+      setTimeout(() => {
+        const targetCategoryElement = document.getElementById(`${targetCategory}-category`)
+        if (targetCategoryElement) {
+          targetCategoryElement.classList.add("active")
+          targetCategoryElement.style.opacity = "1"
+          targetCategoryElement.style.transform = "translateY(0)"
+        }
+      }, 150)
     })
   })
 }
