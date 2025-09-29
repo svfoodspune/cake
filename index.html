@@ -230,227 +230,257 @@
                 <h2 class="section-title">Products Offered</h2>
                 <p class="section-subtitle">Comprehensive range of premium bakery products for every occasion</p>
             </div>
-            <div class="products-grid">
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assests/pexels-hermaion-137103.jpg" alt="Fresh Bread">
+
+            <!-- Product Categories Navigation -->
+            <div class="product-categories-nav">
+                <button class="category-btn active" data-category="breads">
+                    <span class="category-icon">🍞</span>
+                    <span class="category-text">Breads</span>
+                </button>
+                <button class="category-btn" data-category="cakes">
+                    <span class="category-icon">🎂</span>
+                    <span class="category-text">Cakes</span>
+                </button>
+            </div>
+
+            <!-- Breads Category -->
+            <div class="product-category active" id="breads-category">
+                <div class="category-header">
+                    <h3 class="category-title">Fresh Breads & Baked Goods</h3>
+                    <p class="category-subtitle">Freshly baked daily with premium ingredients and traditional recipes</p>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assests/pexels-hermaion-137103.jpg" alt="Fresh Bread">
+                        </div>
+                        <div class="product-info">
+                            <h3>Bread</h3>
+                            <p>Freshly baked artisan bread made with finest ingredients. Perfect for daily consumption and
+                                special occasions.</p>
+                            <div class="product-features">
+                                <span class="feature">Fresh Daily</span>
+                                <span class="feature">Artisan Quality</span>
+                                <span class="feature">Various Types</span>
+                            </div>
+                        </div>
                     </div>
-                    <div class="product-info">
-                        <h3>Bread</h3>
-                        <p>Freshly baked artisan bread made with finest ingredients. Perfect for daily consumption and
-                            special occasions.</p>
-                        <div class="product-features">
-                            <span class="feature">Fresh Daily</span>
-                            <span class="feature">Artisan Quality</span>
-                            <span class="feature">Various Types</span>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assests/pexels-valeriya-580612.jpg" alt="Delicious Burger">
+                        </div>
+                        <div class="product-info">
+                            <h3>Burger Bun</h3>
+                            <p>Gourmet burgers with fresh buns and premium ingredients. Perfect for casual dining and
+                                events.</p>
+                            <div class="product-features">
+                                <span class="feature">Fresh Buns</span>
+                                <span class="feature">Premium Ingredients</span>
+                                <span class="feature">Custom Options</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assests/pexels-ellis-1448665.jpg" alt="Toast">
+                        </div>
+                        <div class="product-info">
+                            <h3>Toast</h3>
+                            <p>Perfectly toasted bread with various toppings. Ideal for breakfast and quick snacks.</p>
+                            <div class="product-features">
+                                <span class="feature">Perfect Toast</span>
+                                <span class="feature">Various Toppings</span>
+                                <span class="feature">Quick Serve</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assests/bun-maska.jpg" alt="Muska Bun">
+                        </div>
+                        <div class="product-info">
+                            <h3>Muska Bun / Sweet Bun</h3>
+                            <p>Sweet, soft buns with delightful flavors. Perfect for evening snacks and tea time.</p>
+                            <div class="product-features">
+                                <span class="feature">Soft Texture</span>
+                                <span class="feature">Sweet Flavor</span>
+                                <span class="feature">Tea Time Perfect</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assests/delicious-arrangement-nutritious-roti.jpg" alt="Kulcha">
+                        </div>
+                        <div class="product-info">
+                            <h3>Kulcha</h3>
+                            <p>Traditional Indian flatbread with authentic taste. Perfect accompaniment for curries and dal.
+                            </p>
+                            <div class="product-features">
+                                <span class="feature">Traditional Recipe</span>
+                                <span class="feature">Soft Texture</span>
+                                <span class="feature">Curry Perfect</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assests/pexels-marina-zasorina-9419194.jpg" alt="Naan">
+                        </div>
+                        <div class="product-info">
+                            <h3>Naan</h3>
+                            <p>Soft, fluffy Indian bread baked to perfection. Available in plain and stuffed varieties.</p>
+                            <div class="product-features">
+                                <span class="feature">Soft & Fluffy</span>
+                                <span class="feature">Multiple Varieties</span>
+                                <span class="feature">Freshly Baked</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assests/pexels-mariana-kurnyk-844465-1775043.jpg" alt="Garlic Bread">
+                        </div>
+                        <div class="product-info">
+                            <h3>Garlic Loft/Bread</h3>
+                            <p>Aromatic garlic bread with herbs and butter. Perfect as appetizer or side dish for meals.</p>
+                            <div class="product-features">
+                                <span class="feature">Aromatic Garlic</span>
+                                <span class="feature">Herb Infused</span>
+                                <span class="feature">Perfect Side</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assests/pexels-valeriya-580612.jpg" alt="Delicious Burger">
-                    </div>
-                    <div class="product-info">
-                        <h3>Burger</h3>
-                        <p>Gourmet burgers with fresh buns and premium ingredients. Perfect for casual dining and
-                            events.</p>
-                        <div class="product-features">
-                            <span class="feature">Fresh Buns</span>
-                            <span class="feature">Premium Ingredients</span>
-                            <span class="feature">Custom Options</span>
+            </div>
+
+            <!-- Cakes Category -->
+            <div class="product-category" id="cakes-category">
+                <div class="category-header">
+                    <h3 class="category-title">Cakes & Sweet Delights</h3>
+                    <p class="category-subtitle">Exquisite cakes and pastries crafted with love for every celebration</p>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.pexels.com/photos/890577/pexels-photo-890577.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Shrewsberry Cookies">
+                        </div>
+                        <div class="product-info">
+                            <h3>Shrewsberry Cookies</h3>
+                            <p>Classic buttery cookies with rich flavor and perfect texture. A beloved treat for all ages.
+                            </p>
+                            <div class="product-features">
+                                <span class="feature">Buttery Rich</span>
+                                <span class="feature">Classic Recipe</span>
+                                <span class="feature">Fresh Baked</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.pexels.com/photos/890577/pexels-photo-890577.jpeg?auto=compress&cs=tinysrgb&w=600"
-                            alt="Shrewsberry Cookies">
-                    </div>
-                    <div class="product-info">
-                        <h3>Shrewsberry Cookies</h3>
-                        <p>Classic buttery cookies with rich flavor and perfect texture. A beloved treat for all ages.
-                        </p>
-                        <div class="product-features">
-                            <span class="feature">Buttery Rich</span>
-                            <span class="feature">Classic Recipe</span>
-                            <span class="feature">Fresh Baked</span>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assests/pexels-hiven-19898618.jpg" alt="Slice Cake">
+                        </div>
+                        <div class="product-info">
+                            <h3>Slice Cake</h3>
+                            <p>Individual cake slices in various flavors. Perfect for quick treats and single servings.</p>
+                            <div class="product-features">
+                                <span class="feature">Various Flavors</span>
+                                <span class="feature">Individual Serving</span>
+                                <span class="feature">Fresh Quality</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assests/pexels-hiven-19898618.jpg" alt="Slice Cake">
-                    </div>
-                    <div class="product-info">
-                        <h3>Slice Cake</h3>
-                        <p>Individual cake slices in various flavors. Perfect for quick treats and single servings.</p>
-                        <div class="product-features">
-                            <span class="feature">Various Flavors</span>
-                            <span class="feature">Individual Serving</span>
-                            <span class="feature">Fresh Quality</span>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assests/pexels-julias-torten-und-tortchen-434418-1179002.jpg" alt="Cup Cake">
+                        </div>
+                        <div class="product-info">
+                            <h3>Cup Cake</h3>
+                            <p>Delightful cupcakes with creative decorations and delicious flavors. Perfect for parties and
+                                celebrations.</p>
+                            <div class="product-features">
+                                <span class="feature">Creative Designs</span>
+                                <span class="feature">Multiple Flavors</span>
+                                <span class="feature">Party Perfect</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assests/pexels-julias-torten-und-tortchen-434418-1179002.jpg" alt="Cup Cake">
-                    </div>
-                    <div class="product-info">
-                        <h3>Cup Cake</h3>
-                        <p>Delightful cupcakes with creative decorations and delicious flavors. Perfect for parties and
-                            celebrations.</p>
-                        <div class="product-features">
-                            <span class="feature">Creative Designs</span>
-                            <span class="feature">Multiple Flavors</span>
-                            <span class="feature">Party Perfect</span>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assests/pexels-pixabay-264939.jpg" alt="Fresh Cream Cake">
+                        </div>
+                        <div class="product-info">
+                            <h3>Fresh Cream Cake</h3>
+                            <p>Luxurious cakes with fresh cream and seasonal fruits. Our signature offering for special
+                                celebrations.</p>
+                            <div class="product-features">
+                                <span class="feature">Fresh Cream</span>
+                                <span class="feature">Seasonal Fruits</span>
+                                <span class="feature">Premium Quality</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assests/pexels-pixabay-264939.jpg" alt="Fresh Cream Cake">
-                    </div>
-                    <div class="product-info">
-                        <h3>Fresh Cream Cake</h3>
-                        <p>Luxurious cakes with fresh cream and seasonal fruits. Our signature offering for special
-                            celebrations.</p>
-                        <div class="product-features">
-                            <span class="feature">Fresh Cream</span>
-                            <span class="feature">Seasonal Fruits</span>
-                            <span class="feature">Premium Quality</span>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Pastry">
+                        </div>
+                        <div class="product-info">
+                            <h3>Pastry</h3>
+                            <p>Flaky, buttery pastries with various fillings. Perfect for breakfast or as a delightful
+                                snack.</p>
+                            <div class="product-features">
+                                <span class="feature">Flaky Texture</span>
+                                <span class="feature">Various Fillings</span>
+                                <span class="feature">Artisan Made</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=600"
-                            alt="Pastry">
-                    </div>
-                    <div class="product-info">
-                        <h3>Pastry</h3>
-                        <p>Flaky, buttery pastries with various fillings. Perfect for breakfast or as a delightful
-                            snack.</p>
-                        <div class="product-features">
-                            <span class="feature">Flaky Texture</span>
-                            <span class="feature">Various Fillings</span>
-                            <span class="feature">Artisan Made</span>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assests/rumball_1.jpg" alt="Rum Ball">
+                        </div>
+                        <div class="product-info">
+                            <h3>Rum Ball</h3>
+                            <p>Rich chocolate rum balls with authentic flavor. A perfect treat for adults and special
+                                occasions.</p>
+                            <div class="product-features">
+                                <span class="feature">Rich Chocolate</span>
+                                <span class="feature">Authentic Rum</span>
+                                <span class="feature">Adult Treat</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assests/rumball_1.jpg" alt="Rum Ball">
-                    </div>
-                    <div class="product-info">
-                        <h3>Rum Ball</h3>
-                        <p>Rich chocolate rum balls with authentic flavor. A perfect treat for adults and special
-                            occasions.</p>
-                        <div class="product-features">
-                            <span class="feature">Rich Chocolate</span>
-                            <span class="feature">Authentic Rum</span>
-                            <span class="feature">Adult Treat</span>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="assests/delicious-homemade-coconut-cookies.jpg" alt="Khari">
+                        </div>
+                        <div class="product-info">
+                            <h3>Khari</h3>
+                            <p>Crispy, layered Indian biscuits perfect with tea or coffee. Traditional taste with modern
+                                quality.</p>
+                            <div class="product-features">
+                                <span class="feature">Crispy Layers</span>
+                                <span class="feature">Traditional Recipe</span>
+                                <span class="feature">Tea Perfect</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assests/delicious-homemade-coconut-cookies.jpg" alt="Khari">
-                    </div>
-                    <div class="product-info">
-                        <h3>Khari</h3>
-                        <p>Crispy, layered Indian biscuits perfect with tea or coffee. Traditional taste with modern
-                            quality.</p>
-                        <div class="product-features">
-                            <span class="feature">Crispy Layers</span>
-                            <span class="feature">Traditional Recipe</span>
-                            <span class="feature">Tea Perfect</span>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.pexels.com/photos/1721932/pexels-photo-1721932.jpeg?auto=compress&cs=tinysrgb&w=600"
+                                alt="Special Bakery Items">
                         </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assests/pexels-ellis-1448665.jpg" alt="Toast">
-                    </div>
-                    <div class="product-info">
-                        <h3>Toast</h3>
-                        <p>Perfectly toasted bread with various toppings. Ideal for breakfast and quick snacks.</p>
-                        <div class="product-features">
-                            <span class="feature">Perfect Toast</span>
-                            <span class="feature">Various Toppings</span>
-                            <span class="feature">Quick Serve</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assests/bun-maska.jpg" alt="Muska Bun">
-                    </div>
-                    <div class="product-info">
-                        <h3>Muska Bun / Sweet Bun</h3>
-                        <p>Sweet, soft buns with delightful flavors. Perfect for evening snacks and tea time.</p>
-                        <div class="product-features">
-                            <span class="feature">Soft Texture</span>
-                            <span class="feature">Sweet Flavor</span>
-                            <span class="feature">Tea Time Perfect</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assests/delicious-arrangement-nutritious-roti.jpg" alt="Kulcha">
-                    </div>
-                    <div class="product-info">
-                        <h3>Kulcha</h3>
-                        <p>Traditional Indian flatbread with authentic taste. Perfect accompaniment for curries and dal.
-                        </p>
-                        <div class="product-features">
-                            <span class="feature">Traditional Recipe</span>
-                            <span class="feature">Soft Texture</span>
-                            <span class="feature">Curry Perfect</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assests/pexels-marina-zasorina-9419194.jpg" alt="Naan">
-                    </div>
-                    <div class="product-info">
-                        <h3>Naan</h3>
-                        <p>Soft, fluffy Indian bread baked to perfection. Available in plain and stuffed varieties.</p>
-                        <div class="product-features">
-                            <span class="feature">Soft & Fluffy</span>
-                            <span class="feature">Multiple Varieties</span>
-                            <span class="feature">Freshly Baked</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="assests/pexels-mariana-kurnyk-844465-1775043.jpg" alt="Garlic Bread">
-                    </div>
-                    <div class="product-info">
-                        <h3>Garlic Loft/Bread</h3>
-                        <p>Aromatic garlic bread with herbs and butter. Perfect as appetizer or side dish for meals.</p>
-                        <div class="product-features">
-                            <span class="feature">Aromatic Garlic</span>
-                            <span class="feature">Herb Infused</span>
-                            <span class="feature">Perfect Side</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="https://images.pexels.com/photos/1721932/pexels-photo-1721932.jpeg?auto=compress&cs=tinysrgb&w=600"
-                            alt="Special Bakery Items">
-                    </div>
-                    <div class="product-info">
-                        <h3>Custom Creations</h3>
-                        <p>Completely personalized bakery items designed according to your specific requirements and
-                            imagination.</p>
-                        <div class="product-features">
-                            <span class="feature">Fully Custom</span>
-                            <span class="feature">Unique Design</span>
-                            <span class="feature">Consultation</span>
+                        <div class="product-info">
+                            <h3>Custom Creations</h3>
+                            <p>Completely personalized bakery items designed according to your specific requirements and
+                                imagination.</p>
+                            <div class="product-features">
+                                <span class="feature">Fully Custom</span>
+                                <span class="feature">Unique Design</span>
+                                <span class="feature">Consultation</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -491,23 +521,24 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="cakeType">Cake Type</label>
+                            <label for="cakeType">Product Type</label>
                             <select id="cakeType" name="cakeType">
                                 <option value="">Select product type</option>
-                                <option value="wedding">Bread</option>
-                                <option value="birthday">Burger</option>
-                                <option value="corporate">Shrewsberry Cookies</option>
-                                <option value="anniversary">Slice Cake</option>
-                                <option value="custom">Cup Cake</option>
-                                <option value="custom">Fresh Cream Cake</option>
-                                <option value="custom">Pastry</option>
-                                <option value="custom">Rum Ball</option>
-                                <option value="custom">Khari</option>
-                                <option value="custom">Toast</option>
-                                <option value="custom">Garlic Loft</option>
-                                <option value="custom">Muska Bun/Sweet Bun</option>
-                                <option value="custom">Naan</option>
-                                <option value="custom">Kulcha</option>
+                                <option value="bread">Bread</option>
+                                <option value="burger">Burger</option>
+                                <option value="cookies">Shrewsberry Cookies</option>
+                                <option value="slice-cake">Slice Cake</option>
+                                <option value="cup-cake">Cup Cake</option>
+                                <option value="fresh-cream-cake">Fresh Cream Cake</option>
+                                <option value="pastry">Pastry</option>
+                                <option value="rum-ball">Rum Ball</option>
+                                <option value="khari">Khari</option>
+                                <option value="toast">Toast</option>
+                                <option value="garlic-bread">Garlic Loft</option>
+                                <option value="muska-bun">Muska Bun/Sweet Bun</option>
+                                <option value="naan">Naan</option>
+                                <option value="kulcha">Kulcha</option>
+                                <option value="custom">Custom Creation</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -618,14 +649,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
